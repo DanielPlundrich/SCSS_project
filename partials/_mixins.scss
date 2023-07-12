@@ -1,0 +1,27 @@
+@mixin base-width {
+    width: 70vw;
+}
+
+@mixin header-footer-style{
+    color: $text-header-footer-color;
+    background-color: $first-color;
+    text-align: center;
+
+}
+
+@mixin button-style{
+    padding: 15px 0;
+    text-decoration: none;
+    color: $text-button-color;
+    background-color: $first-color;
+    width: 120px;
+}
+
+@mixin rounded($radius: 15px){
+    border-radius: $radius;
+
+}
+
+@mixin margin-bottom($margin-bottom: 25px){
+    margin-bottom: $margin-bottom;
+}

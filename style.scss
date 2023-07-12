@@ -1,0 +1,136 @@
+@import "partials/mixins";
+@import "partials/variables";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    $text-color: black;
+}
+
+header{
+    height: $header-height;
+    margin-bottom: 10px;
+    @include header-footer-style;
+    @include margin-bottom;
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: $header-height;
+
+        .INVISIBLE{
+            visibility: hidden;
+        }
+
+        h1{
+            margin: 0 !important;
+            line-height: $header-height
+        }
+
+        .fa-solid{
+            margin-right: 20px;
+            color: white;
+            cursor: pointer;
+
+        }
+    }
+
+}
+
+.about-us{
+    color: black;
+    @include margin-bottom;
+
+    h2{
+        @include margin-bottom(10px)
+    }
+}
+
+.references{
+    display: grid;
+    grid-template-columns: repeat(2, 50%) ;
+}
+
+.references .theme{
+        @include margin-bottom;
+        display: inline-block;
+
+        img{
+
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+            @include margin-bottom;
+            @include rounded;
+            box-shadow: $shadow-style;
+        }
+
+        a{
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            @include button-style;
+            @include rounded;
+
+            &:hover{
+                background-color: lighten($first-color, 10%);
+            }
+        }
+    }
+
+body {
+    @include base-width;
+    margin: 0 auto !important;
+    background-color: $body-bg-color
+
+}
+
+footer{
+    @include header-footer-style;
+    height: $footer-height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin-bottom: 15px;
+
+        li{
+            cursor: pointer;
+            margin: 0 10px;
+
+            &:hover{
+                color: lighten($first-color, 10%);
+            }
+        }
+
+
+    }
+}
+
+.dark-mode {
+    background-color: $body-bg-color-dark-mode;
+
+    .fa-solid{
+        color: $moon-icon-color-dark-mode;
+        text-shadow: 0 0 25px $moon-icon-color-dark-mode;
+    }
+    .about-us{
+        color: $text-color-dark-mode;
+    }
+  }
+
+
+
+
+

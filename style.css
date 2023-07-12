@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 50px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: rgb(146, 22, 108);
+  text-align: center;
+  margin-bottom: 25px;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+header div .INVISIBLE {
+  visibility: hidden;
+}
+header div h1 {
+  margin: 0 !important;
+  line-height: 50px;
+}
+header div .fa-solid {
+  margin-right: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.about-us {
+  color: black;
+  margin-bottom: 25px;
+}
+.about-us h2 {
+  margin-bottom: 10px;
+}
+
+.references {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.references .theme {
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.references .theme img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+.references .theme a {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(146, 22, 108);
+  width: 120px;
+  border-radius: 15px;
+}
+.references .theme a:hover {
+  background-color: #be1d8d;
+}
+
+body {
+  width: 70vw;
+  margin: 0 auto !important;
+  background-color: white;
+}
+
+footer {
+  color: white;
+  background-color: rgb(146, 22, 108);
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 15px;
+}
+footer ul li {
+  cursor: pointer;
+  margin: 0 10px;
+}
+footer ul li:hover {
+  color: #be1d8d;
+}
+
+.dark-mode {
+  background-color: black;
+}
+.dark-mode .fa-solid {
+  color: rgb(255, 251, 0);
+  text-shadow: 0 0 25px rgb(255, 251, 0);
+}
+.dark-mode .about-us {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
