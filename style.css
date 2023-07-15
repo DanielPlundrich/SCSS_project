@@ -5,6 +5,12 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+  width: 70vw;
+  margin: 0 auto !important;
+  background-color: white;
+}
+
 header {
   height: 50px;
   margin-bottom: 10px;
@@ -72,12 +78,6 @@ header div .fa-solid {
   background-color: #be1d8d;
 }
 
-body {
-  width: 70vw;
-  margin: 0 auto !important;
-  background-color: white;
-}
-
 footer {
   color: white;
   background-color: rgb(146, 22, 108);
@@ -111,4 +111,37 @@ footer ul li:hover {
 }
 .dark-mode .about-us {
   color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+  .references {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .references .theme {
+    display: block;
+  }
+  .about-us {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .references {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+  }
+  .references .theme {
+    display: block;
+  }
+  .about-us {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }/*# sourceMappingURL=style.css.map */

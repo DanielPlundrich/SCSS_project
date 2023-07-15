@@ -9,7 +9,10 @@
 }
 
 body{
+    @include base-width;
     $text-color: black;
+    margin: 0 auto !important;
+    background-color: $body-bg-color
 }
 
 header{
@@ -84,12 +87,7 @@ header{
         }
     }
 
-body {
-    @include base-width;
-    margin: 0 auto !important;
-    background-color: $body-bg-color
 
-}
 
 footer{
     @include header-footer-style;
@@ -128,9 +126,42 @@ footer{
     .about-us{
         color: $text-color-dark-mode;
     }
-  }
+}
 
+// mobile
+@media only screen and (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+    .references{
+        display: grid;
+        grid-template-columns: repeat(1, 100%) ;
+    }
+    .references .theme{
+        display: block;
+    }
+    .about-us{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
 
-
+// tablet
+@media only screen and (max-width: 768px){
+    body{
+        width: 100%;
+    }
+    .references{
+        display: grid;
+        grid-template-columns: repeat(1, 100%) ;
+    }
+    .references .theme{
+        display: block;
+    }
+    .about-us{
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
 
 
